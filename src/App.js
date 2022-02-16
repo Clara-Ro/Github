@@ -1,8 +1,9 @@
-import { SearchIcon, LocationIcon, WebsiteIcon, TwitterIcon, CompanyIcon } from './assents/Icons/index'
+import { LocationIcon, WebsiteIcon, TwitterIcon, CompanyIcon } from './assents/Icons/index'
 import './App.css';
 import { BallTriangle } from 'react-loader-spinner';
-import Header from './components/header'
+import Header from './components/Header'
 import { useState } from 'react';
+import SearchBar from './components/SearchBar';
 
 function App({ changeTheme, isDark }) {
 

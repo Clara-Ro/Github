@@ -1,4 +1,4 @@
-import{Sun, Moon} from '../assents/Icons/'
+import{Sun, Moon} from '../assents/Icons'
 
 export default function Header({ changeTheme, isDark }){
     return (
