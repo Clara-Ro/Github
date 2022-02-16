@@ -25,12 +25,7 @@ function App({ changeTheme, isDark }) {
     <>
       <div className="container">
         <Header changeTheme={changeTheme} isDark={isDark} />
-        <div className='search'>
-          <SearchIcon />
-          <input className='search-input' placeholder='Search GitHub username...'
-            value={userName} onChange={handleInput} />
-          <button className='search-button' onClick={searchUser} disabled={loading}>Search</button>
-        </div>
+        <SearchBar userName={userName} handleInput={handleInput} searchUser={searchUser} loading={loading}/>
         {loading ? (<div className='loading'>
           <BallTriangle
             heigth="100"
