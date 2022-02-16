@@ -1,0 +1,147 @@
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.theme{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.theme span{
+    margin: 0 1rem;
+}
+
+.search{
+    background-color: var(--secondary);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.search-input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: var(--font);
+    flex: 1;
+    margin-left: 20px;
+}
+
+.search-input::placeholder{
+    color: var(--font);
+    font-size: 1.15rem;
+}
+
+.search-button{
+    background-color: var(--button);
+    color: var(--font);
+    border: none;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.15rem;
+    cursor: pointer;
+}
+
+.search-button:disabled{
+    cursor: progress;
+}
+
+.loading{
+    display: flex;
+    justify-content: center;
+}
+
+.icon{
+    border-radius: 50%;
+    width: 15%;
+    height: 15%;
+    min-width: 5rem;
+}
+
+.user-container{
+    background-color: var(--secondary);
+    margin-top: 2rem;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+}
+
+.user{
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px;
+    flex: 1;
+}
+
+.user-content{
+    display: flex;
+}
+
+.date{
+    margin-left: auto;
+    color: var(--extra);
+}
+
+.user-name{
+    margin-bottom: 5px;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.user-profile p{
+    margin: 10px 0;
+    color: var(--extra);
+}
+
+.user-profile a {
+    text-decoration: none;
+    color: var(--buttonHover);
+}
+
+.dethails{
+    background-color: var(--body);
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.repos, .followers, .following{
+    display: flex;
+    flex-direction: column;
+}
+
+.label{
+    color: var(--extra);
+}
+
+.value{
+    font-size: 1.2rem;
+}
+
+.social-media{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 15px;
+    
+}
+
+.icons{
+    text-decoration: none;
+    color: var(--font);
+}
+
+.not-found{
+    color: var(--extra);
+}
+
+.icons svg{
+    margin-right: 10px;
+}
