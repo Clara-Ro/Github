@@ -1,4 +1,4 @@
-import { SearchIcon } from "../assents/Icons"
+import { SearchIcon } from "../assets/Icons"
 
 export default function SearchBar({userName,handleInput,searchUser,loading}) {
     return (
