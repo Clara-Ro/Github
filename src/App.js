@@ -9,7 +9,8 @@ import UserProfile from './components/UserProfile';
 function App({ changeTheme, isDark }) {
 
   const [userName, setUserName] = useState();
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(false);
+  const [user, setUser] = useState();
 
   function handleInput(e) {
     setUserName(e.target.value)
@@ -19,7 +20,7 @@ function App({ changeTheme, isDark }) {
   async function searchUser() {
     setLoading(true)
     const data = await fetch(`https://api.github.com/users/${userName}`).then((res) => res.json())
-    console.log(data)
+    setUser(data)
     setLoading(false)
   }
 
@@ -36,7 +37,7 @@ function App({ changeTheme, isDark }) {
             ariaLabel="loading-indicator"
           />
         </div>): null }
-         {!loading && <UserProfile/>}
+         {!loading && user && <UserProfile user={user}/>}
       </div>
     </>
   );
