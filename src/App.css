@@ -64,6 +64,14 @@ header{
     min-width: 5rem;
 }
 
+.container{
+    background-color: var(--body);
+    color: var(--font);
+    min-width: 100vw;
+    min-height: 100vh;
+    padding:  10rem 25%;
+}
+
 .user-container{
     background-color: var(--secondary);
     margin-top: 2rem;
@@ -145,4 +153,53 @@ header{
 
 .icons svg{
     margin-right: 10px;
+}
+
+@media (max-width:1220px) {
+    
+    .search-icon path{
+        transform: scale(0.5) translate(50%, 50%) ;
+    }
+
+    .container{
+        padding: 10rem 10%;
+        width: 100%;
+    }
+
+    .user-container, .mobile-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile-content{
+        margin: 1rem;
+    }
+
+    .date{
+        margin:0;
+    }
+
+    .social-media{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:525px) {
+
+    html{
+        font-size: 10px !important ; 
+    }
+
+    .container{
+        padding: 2rem 5rem;
+    }
+
+    .user{
+        margin: 0 15px;
+    }
+
+    .user-container{
+        padding: 15px;
+    }
 }
